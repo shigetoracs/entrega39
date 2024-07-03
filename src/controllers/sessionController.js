@@ -53,6 +53,9 @@ export const register = async (req, res) => {
 }
 // LOGOUT : cerrar sesion
 export const logout = async (req, res) => {
+    const user = await userModel.findOne(req.session.user._id)
+    user.last_connection = new Date()
+    await user.save()
     req.session.destroy(function (e) {
         if (e) {
             console.log(e)

@@ -5,7 +5,7 @@ import Assert from "assert";
 const assert = Assert.strict;
 
 await mongoose.connect(
-  `mongodb+srv://tomascosentino123:vFB3E6yt554v8CUN@cluster0.we7yzrs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+  `mongodb+srv://lautarogerman3:coderhouse@cluster0.d91x4c9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 );
 
 describe("Test CRUD de los productos en la ruta /api/products", function () {
